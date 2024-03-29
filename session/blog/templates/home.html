@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Home</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" />
+  </head>
+  <body>
+    <section class="main">
+      <h1 class="main_text">이것은 과제 제출이에요!</h1>
+      <a href="{% url 'create' %}" class="plus_tag"
+        ><div class="plus_btn">추가하기</div></a
+      >
+    </section>
+    <section class="posting_list">
+      {% for blog_number in blog_data %}
+      <span class="blog">
+        <h1>{{blog_number.title}}</h1>
+        <p>{{blog_number.content}}</p>
+        <p style="opacity: 60%">{{blog_number.created_at}}</p>
+      </span>
+      {% endfor %}
+    </section>
+  </body>
+</html>

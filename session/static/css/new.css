@@ -1,0 +1,14 @@
+.title_text {
+  text-align: center;
+}
+
+.input_form {
+  text-align: center;
+  border-style: solid;
+  border-width: 2px;
+  border-color: black;
+}
+
+.text_area {
+  resize: none;
+}

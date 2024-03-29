@@ -1,0 +1,42 @@
+.main {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.main_text {
+  margin-top: 200px;
+}
+
+.plus_tag {
+  text-decoration: none;
+  color: black;
+}
+
+.plus_btn {
+  position: relative;
+  left: 35%;
+  text-align: center;
+  background-color: rgb(114, 224, 187);
+  padding: 10px;
+  width: 30%;
+}
+
+.plus_btn:hover {
+  background-color: orange;
+}
+
+.posting_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.blog {
+  border-width: 2px;
+  border-style: solid;
+  text-align: center;
+  padding: 20px;
+  margin: 10px 10px;
+}

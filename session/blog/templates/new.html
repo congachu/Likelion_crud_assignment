@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/new.css' %}" />
+  </head>
+  <body>
+    <h1 class="title_text">새 글 작성하기</h1>
+    <form action="{%url 'create'%}" method="POST" class="input_form">
+      {% csrf_token %}
+      <div class="input_block">제목 : <input type="text" name="title" /></div>
+      <div class="input_block">
+        본문 :
+        <textarea
+          name="content"
+          cols="30"
+          rows="10"
+          class="text_area"
+        ></textarea>
+      </div>
+      <input type="submit" value="작성하기" />
+    </form>
+  </body>
+</html>
